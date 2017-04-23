@@ -3,7 +3,8 @@ var ThangProApp =  angular.module("ThangProApp", [])
             $http({
   				method: 'POST',
   				url: 'https://thangapi.herokuapp.com',
-		    		headers:{'Access-Control-Allow-Origin':'http://mhthang.github.io'}
+		    		headers:{'Access-Control-Allow-Origin':'http://mhthang.github.io'},
+		    		data :{}
 				}).then(function successCallback(response) {
     				console.log("ok");
 		    		console.log(response.a);
