@@ -3,8 +3,7 @@ var ThangProApp =  angular.module("ThangProApp", [])
             $http({
   				method: 'POST',
   				url: 'https://thangapi.herokuapp.com',
-		    		headers:{'Content-Type': 'application/json;charset=utf-8'},
-		    		data :{}
+		    		headers:{'Content-Type': 'application/json;charset=utf-8'}
 				}).then(function successCallback(response) {
     				console.log("ok");
 		    		console.log(response.a);
