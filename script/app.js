@@ -2,7 +2,8 @@ var ThangProApp =  angular.module("ThangProApp", [])
          .controller("ViduController", function($scope,$http) {
             $http({
   				method: 'POST',
-  				url: 'https://thangapi.herokuapp.com'
+  				url: 'https://thangapi.herokuapp.com',
+		    		headers:{'Access-Control-Allow-Origin':'*'}
 				}).then(function successCallback(response) {
     				console.log("ok");
 		    		console.log(response.a);
