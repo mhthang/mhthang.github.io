@@ -6,7 +6,7 @@ var ThangProApp =  angular.module("ThangProApp", [])
 		    		headers:{'Content-Type': 'application/json;charset=utf-8'}
 				}).then(function successCallback(response) {
     				console.log("ok");
-		    		console.log(response.a);
+		    		console.log(response.data.a);
   				}, function errorCallback(response) {
     				console.log("no ok");
   				});
