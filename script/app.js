@@ -1,5 +1,15 @@
-var ThangProApp =  angular.module("ThangProApp", [])
-         .controller("ViduController", function($scope,$http) {
+var ThangProApp = angular.module('ThangProApp', [
+ 'ui.router',
+ 'ngSanitize',
+ 'ui.bootstrap',
+ 'appRoutes',
+ 'appDirectives',
+ 'appFilters',
+ 'appServices',
+ 'baseCtrl',
+]);
+
+ThangProApp.controller("ViduController", function($scope,$http) {
             $http({
   				method: 'POST',
   				url: 'https://thangapi.herokuapp.com/post',
