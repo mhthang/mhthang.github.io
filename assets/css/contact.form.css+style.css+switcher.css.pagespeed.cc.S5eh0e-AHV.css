@@ -424,8 +424,8 @@ a:hover, a:visited, a:focus, a:active{
     border-radius: 50%;
     border-width: 1px;
     border-style: solid;
-    width: 232px;
-    height: 232px;
+    width: 260px;
+    height: 260px;
     overflow: hidden;
     display: inline-block;
 }
