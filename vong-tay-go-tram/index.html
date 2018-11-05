@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/flipclock.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=vietnamese" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" integrity="sha256-ENFZrbVzylNbgnXx0n3I1g//2WeO47XxoPe0vkp3NC8=" crossorigin="anonymous" />
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -352,6 +353,10 @@
             <!--End .cookie-popup-->
         </div>
 
+		
+	
+		
+		
         <style>
         div.cookie-popup-wrap {
             width: 100%;
@@ -466,6 +471,42 @@
             popup_time: 45000
         });
         </script>
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js" integrity="sha256-3blsJd4Hli/7wCQ+bmgXfOdK7p/ZUMtPXY08jmxSSgk=" crossorigin="anonymous"></script>
+		<script>
+    $('document').ready(function(){
+        var ran = Math.floor((Math.random() * 3000) + 1000);
+        showTo(ran);
+        setInterval(function(){
+                var ran = Math.floor((Math.random() * 000) + 000);
+                showTo(ran);
+        }, 15000);
+
+    });
+    
+    function showTo(ran) {
+        setTimeout(function(){
+            toastr.options.positionClass  = 'toast-bottom-right';
+            toastr.options.showDuration  = 300;
+            toastr.options.hideDuration  = 300;
+            toastr.options.timeOut  = 5000; <!-- show time -->
+            var phones = ['0169918xxxx','090167xxxx','090277xxxx','097890xxxx','096899xxxx','098746xxxx','0163389xxxx','0168999xxxx','09611xxxx','098687xxxx','098687xxxx','086813xxxx','094246xxxx','092140xxxx','0163733xxxx','098134xxxx','096568xxxx','086879xxxx','0165363xxxx','0165363xxxx','0167435xxxx','097302xxxx','097821xxxx','091371xxxx','0122206xxxx','096677xxxx','088863xxxx','0121272xxxx','088605xxxx','097847xxxx','097948xxxx','096577xxxx','091623xxxx','094213xxxx','0124988xxxx','096185xxxx'];
+            var names = ['Phạm Văn Tình','Phạm Văn thịnh','Trần Văn Tùng','Nguyễn Hạ Trang','Trương Quang Hữu','Lê Thị Bình','Trần Hồng Quế','Phan Hiếu','Phan Hồng Ân','Phạm Thanh Nhàn','Nguyễn Thuý Vân','Mạc Thị Thuý','Hoàng Thông','Nguyễn Hùng','Dương Thanh Thuỷ','Nguyễn Khương','Phan Duy Tân','Nguyễn Hồng Lân','Phạm Nhật Hạ','Bùi Tiến Mạnh','Đỗ Hồng Long','Huỳnh Khánh'];
+			var times = ['3 phút trước','2 phút trước','7 phút trước','1 phút trước','10 phút trước','4 phút trước','2 phút trước','6 phút trước','8 phút trước','2 phút trước'];
+            var phone = phones[Math.floor(Math.random()*phones.length)];
+            var name = names[Math.floor(Math.random()*names.length)];
+			var time = times[Math.floor(Math.random()*times.length)];
+			
+            title = 'Cám ơn ' + name;
+            var msg = phone + ' đã đặt hàng thành công ' + time;
+            toastr.success(msg, title);
+
+        }, ran);
+    }
+</script>
+		
+		
     </div>
     <!-- End.wrapper -->
 
