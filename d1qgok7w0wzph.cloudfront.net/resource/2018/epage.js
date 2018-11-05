@@ -81,11 +81,11 @@
     }
     //set adf_source click_id
     function setInputsJs(){
-        if(_opt.set_input_js){
-            setInput('click_id',getParam('click_id'));
-            setInput('adf_source',getParam('adf_source'));
-            setInput('address',document.referrer);
-        }
+        // if(_opt.set_input_js){
+            // setInput('click_id',getParam('click_id'));
+            // setInput('adf_source',getParam('adf_source'));
+            // setInput('address',document.referrer);
+        // }
     }
 
     //function gtPrJ() {return JSON.parse('{"' + decodeURI(window.location.search.substring(1)).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}')};    
