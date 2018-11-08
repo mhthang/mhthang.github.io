@@ -1,0 +1,965 @@
+ *{margin: 0;padding: 0;}
+/*Font*/
+    @font-face {
+        font-family: 'utm-fire-house';
+        src: url(../fonts/utm-fire-house.ttf);
+    }
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+    
+    body{font-family: 'Roboto';font-size: 18px;font-size: normal;}
+    h1,h2,h3,h4{
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Roboto Condensed';
+    }
+    h2{font-size: 36px;}
+
+    input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #fff !important;
+    }
+    input::-moz-placeholder { /* Firefox 19+ */
+      color: #fff !important;
+    }
+    input:-ms-input-placeholder { /* IE 10+ */
+      color: #fff !important;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+      color: #fff !important;
+    }
+    input::placeholder {
+      color: #fff !important;
+    }
+
+/*Time*/
+        .time .flip-clock-before,
+        .time .flip-clock-active{
+            border: 1px solid #fff09da6;
+            border-radius: 4px;
+            padding-left: 2px; 
+        }
+        .time .flip-clock-dot{
+            background: #1a1112c7 !important;
+        }
+        .time .flip{
+            zoom: 0.8;
+        }
+        .time .flip-clock-divider{
+            zoom: 0.8;
+        }
+        .time{
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .time .flip-clock-wrapper ul li a div div.inn{
+            background-color: #340c12ab;
+        }
+        .time .flip-clock-wrapper ul li.flip-clock-active{
+            background-color: #340c12ab;
+        }
+        .time .flip-clock-wrapper ul li.flip-clock-before a ,
+        .time .flip-clock-wrapper ul li.flip-clock-active a {
+            color: #fff !important;
+        }
+        .time .flip-clock-wrapper ul.play li.flip-clock-before a div div.inn{
+            background-color: #340c12ab;
+        }
+        .time .flip-clock-wrapper ul.play li.flip-clock-before a div div.shadow{
+            background-color: #340c12ab;
+        }
+        .time .flip-clock-wrapper ul.play li.flip-clock-active a div div.inn{
+            background-color: #340c12ab;
+        }
+        .time .flip-clock-wrapper ul.play li.flip-clock-active a div div.shadow{
+            background-color: #340c12ab;
+        }
+        
+        .time .flip-clock-divider .flip-clock-label{
+            font-size: 18px;
+        }
+
+        .flip-clock-wrapper ul li a div.up:after {
+            background-color: #340c12ab;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .flip-clock-wrapper ul li a div div.inn {
+            color: #111;
+            text-shadow: 0 1px 1px #555;
+            background-color: #340c12ab;
+        }
+
+/*Form Order*/
+    .form-order{
+        background-color: #f2f2f1;
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: left;
+        border: 1px solid #1e1b1c;
+        border-radius: 5px;
+    }
+    .form-order legend{
+        text-align: center;
+        font-family: Roboto;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        border: none;
+        background: #414d0b;
+        background: -webkit-linear-gradient(top, #000, #414141);
+        background: -o-linear-gradient(top, #000, #414141);
+        background: linear-gradient(to top, #000, #414141);  
+        color: #fff;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+    .form-order .content{
+        padding: 0 20px 20px;
+    }
+    .form-order .content .price{
+        text-align: right;
+        color: #be0f02;
+    }
+    .form-order .content .price .old-price{
+        text-decoration: line-through;
+        font-size: 0.9em;
+    }
+    .form-order .content .price .new-price{
+        font-size: 1.9em;
+        font-weight: 700;
+    }
+    .form-order .content .price .new-price span{
+        font-size: 0.5em;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .form-order .content .js_submit{
+        display: block;
+        width: 100%;
+        text-align: center;
+        background: #b70e04;
+        background: -webkit-linear-gradient(top, #b70e04, #fc4836);
+        background: -o-linear-gradient(top, #b70e04, #fc4836);
+        background: linear-gradient(to top, #b70e04, #fc4836);  
+        border: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.3em;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+    .form-order .content button:hover{
+        background-color: #fc4836;
+    }
+    .form-order .top-form{
+        background: #b70e04;
+        background: -webkit-linear-gradient(top, #b70e04, #fc4836);
+        background: -o-linear-gradient(top, #b70e04, #fc4836);
+        background: linear-gradient(to top, #b70e04, #fc4836); 
+        color: #f2e2cd;
+        padding: 1px 0; 
+        margin-top: 10px;
+    }
+    .form-order .top-form h3{
+        color: #f2e2cd;
+        margin: 5px auto 0;
+    }
+
+/*Btn order*/
+    .btn-order{
+        color: #fff;
+        display: block;
+        max-width: 230px;
+        /*background: #340c12cf;*/
+        background-color: rgba(52, 12, 18, 0.8117647058823529);
+        text-transform: uppercase;
+        padding: 10px 20px;
+        font-weight: bolder;
+        font-size: 18px;
+        border-radius: 6px;
+        margin: 30px auto;
+        border: 1px solid #fff09d;
+    }
+    .btn-order:hover{
+        color: #fff09d;
+        border: 1px solid #fff09d;
+        background-color: #b30a12;
+    }   
+
+/*1*/
+    .sec-1{
+    	background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg1.jpg) center top no-repeat;
+    	background-size: cover; 
+        min-height: 453px;
+        position: relative;
+    }
+    .sec-1 .logo{
+        float: right;
+        margin-top: 20px;
+    }
+    .sec-1 .slogan{
+        position: absolute;
+        top: 185px;
+        right: -220px;
+        z-index: 10;
+    }
+    .sec-1 .circle{
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/round.png')top center no-repeat;
+        width: 452px;
+        height: 441px;
+        margin: 10px auto 0;
+        position: absolute;
+        z-index: 10;
+    }
+    .sec-1 .sp{
+        position: absolute;
+        top: 160px;
+        left: -80px;
+        z-index: 10;
+    }
+    .sec-1 .table{
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/table.png') top center no-repeat;
+        width: 1178px;
+        height: 232px;
+        margin-top: 140px;
+        position: absolute;
+        z-index: 9;
+        left: 13%;
+    }
+    .sec-1 .price{
+        position: absolute;
+        z-index: 10;
+        color: #060b07;
+        text-align: right;
+        width: 100%;
+        bottom: -250px;
+        right: 70px;
+    }
+    .sec-1 .price .old-price{
+        font-size: 24px;
+        font-weight: 300;
+        font-family: 'Roboto';
+        margin-bottom: 0;
+        text-decoration: line-through;
+    }
+    .sec-1 .price .text-price{
+        font-size: 14px;
+        text-align: right;
+        float: right;
+        text-transform: uppercase;
+        line-height: 1.1em;
+        padding-right: 5px;
+    }
+    .sec-1 .price .number-price{
+        font-size: 40px;
+        font-weight: 900;
+        font-family: 'Roboto';
+        float: right;
+        position: relative;
+        top: -13px;
+    }
+    .sec-1 .btn-order{
+        position: relative;
+        z-index: 11;
+        top: 390px;
+        text-align: center;
+        display: inline-block;
+        right: -325px;
+        border-color: #ffef9b;
+        /*background-color: #c01c24;*/
+    }
+    .sec-1 .btn-order:hover{
+        background-color: #b30a12;
+    }
+/*2*/
+    .sec-2{
+        background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg2.jpg) center top no-repeat;
+        background-size: cover; 
+        text-align: center;
+        min-height: 619px;
+        padding-top: 40px;
+    }
+    .sec-2 h2{
+        color: #fff;
+        margin-top: 50px;
+        border-bottom: 1px solid #fff;
+        max-width: 520px;
+        margin: 50px auto;
+    }
+    .sec-2 .item{
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/polygon.png') center top no-repeat;
+        width: 221px;
+        height: 252px;
+        margin: 0 auto;
+    }
+    .sec-2 .item p{
+        font-size: 36px;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: #df1338;
+        text-align: center;
+        padding-top: 80px;
+        line-height: 1.1em;
+        font-family: 'Roboto Condensed';
+    }
+    .sec-2 .item p span{
+        display: block;
+        color: #fff;
+        background-color: #8d333a;
+        max-width: 170px;
+        margin: 0 auto;
+        font-weight: bold;
+        padding: 5px 0;
+    }
+    .sec-2 .down{
+        margin-top: 70px;
+    }
+
+/*3*/ 
+    .sec-3{
+        background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg3.jpg) center top no-repeat;
+        background-size: cover; 
+        text-align: center;
+        min-height: 660px;
+        padding-top: 50px;
+    }
+    .sec-3 h2{
+        color: #fff09d;
+    }
+    .sec-3 span{
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/sao.png') center top no-repeat;
+        width: 42px;
+        height: 28px;
+        display: block;
+        margin: 14px auto 25px;
+    }
+    .sec-3 .text{
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg.png') center top no-repeat;
+        width: 812px;
+        height: 382px;
+        margin: 0 auto;
+        padding: 35px 20px 0;
+        color: #feee9c;
+        font-size: 24px;
+        font-family: 'Roboto';
+    }
+
+/*4*/
+    .sec-4{
+        background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg4.jpg) center top no-repeat;
+        background-size: cover; 
+        text-align: center;
+        min-height: 763px;
+    }
+    .sec-4 .head{
+        max-width: 484px;
+        margin: 0 auto;
+    }
+    .sec-4 h2{
+        max-width: 400px;
+        color: #ece1a9;
+        float: left;
+        margin: 30px 0 50px;
+    }
+    .sec-4 .sao{
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/sao.png') center top no-repeat;
+        display: block;
+        width: 42px;
+        height: 28px;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg);
+        float: left;
+        margin-top: 55px;
+    }
+    .sec-4 .sao-right{
+        -ms-transform: rotate(270deg); /* IE 9 */
+        -webkit-transform: rotate(270deg); /* Safari */
+        transform: rotate(270deg);
+    }
+    .sec-4 .item{
+        font-size: 16px;
+        font-family: 'Roboto Condensed';
+        color: #fff09d;
+        background: url('../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/circle.png') center top no-repeat;
+        height: 251px;
+        max-width: 251px; 
+        padding: 0 35px;
+        text-align: center;
+        margin: 0 auto 25px;
+    }
+    .sec-4 .item p{
+        position: relative;
+        top: 22%;
+    }
+    .sec-4 .middle-text p{
+        position: relative;
+        top: 26%;
+    }
+    .sec-4 .center-text{
+        margin-top: 120px;
+    }
+
+
+/*5*/
+    .sec-5{
+        background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg5.jpg) center top no-repeat;
+        background-size: cover; 
+        text-align: center;
+        min-height: 360px;
+        padding: 20px 0;
+        position: relative;
+    }
+    .sec-5 hr{
+        max-width: 400px;
+        margin: 0px auto 30px;
+    }
+    .sec-5 .note{
+        color: #fcea95;
+        margin: 0;
+    }
+    .sec-5 .btn-order{
+        margin-top: 10px;
+    }
+    .sec-5 .sp{
+        position: absolute;
+        top: -50px;
+        right: 0px;
+    }
+    .sec-5 .price{
+        text-align: right;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    .sec-5 .price .old{
+        font-size: 30px;
+        font-weight: 300;
+        color: #000;
+        margin-bottom: 0px;
+        text-decoration: line-through;
+    }
+    .sec-5 .price .new{
+        color: #fff;
+        font-size: 18px;
+        line-height: 2.2em;
+    }
+    .sec-5 .price .new span{
+        font-size: 42px;
+        font-weight: 900;
+        display: block;
+    }
+
+/*6*/  
+    .sec-6{
+        background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg6.jpg) center top no-repeat;
+        background-size: cover; 
+        text-align: center;
+        min-height: 476px;
+    }
+    .sec-6 h2{
+        color: #b23d3d;
+        max-width: 440px;
+        border-bottom: 1px solid #b23d3d;
+        margin: 20px auto 50px;
+    }
+    .sec-6 .text{
+        background-color: #fff09d; 
+        border: 1px dashed #b23d3d;
+        max-width: 800px;
+        padding: 35px 10px 35px 120px;
+        text-align: left;
+        color: #000000;
+        font-size: 18px;
+        font-family: 'Roboto Condensed';
+        margin: 0 auto;
+        min-height: 217px;
+    }
+    .sec-6 .text .name{
+        font-weight: bold;
+    }
+    .sec-6 .ava{
+        position: absolute;
+        left: 80px;
+    }
+    .sec-6 .carousel-indicators{
+        bottom: -50px;
+    }
+    .sec-6 .carousel-indicators .active{
+        background-color: #00060e;
+        border-color: #fff1a5;
+        width: 17px;
+        height: 17px;
+        bottom: -1px;
+        position: relative;
+    }
+    .sec-6 .carousel-indicators li{
+        background-color: #666a6e;
+        border-color: #b5413d;
+        width: 12px;
+        height: 12px;
+    }
+
+/*7*/   
+    .sec-7{
+        background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg7.jpg) center 68% no-repeat;
+        background-size: cover; 
+        text-align: center;
+        min-height: 627px;
+        border: none;
+        border-top: 2px solid #fdf3a5;
+        border-bottom: 2px solid #fdf3a5;
+    }
+    .sec-7 .area{
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .sec-7 .area h3{
+        color: #fff09d;
+        font-size: 30px;
+        font-family: "Roboto";
+        line-height: 1.2em;
+        margin: 30px auto 0;
+    }
+    .sec-7 .area hr{
+        border-color: #fff09d;
+        margin-bottom: 30px;
+    }
+    .sec-7 .area .order-form .form-control{
+        background-color: #792e32c7;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #fff09d;
+        color: #fff1a6 !important;
+        font-size: 17px;
+        line-height: 1.6em;
+        height: 35px;
+        margin: 0 auto 20px;
+        max-width: 360px;
+    }     
+    .sec-7 .area .order-form .note{
+        font-size: 14px;
+        color: #fff1a6;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-style: italic;
+    }
+    .sec-7 .price{
+        max-width: 330px;
+        margin: 10px auto 15px;
+    }
+    .sec-7 .price .old{
+        color: #060b07;
+        text-decoration: line-through;
+        text-align: right;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    .sec-7 .price .new{
+        color: #fff;
+        font-family: 'Roboto';
+    }
+    .sec-7 .price .new span{
+        float: right;
+    }
+    .sec-7 .price .new .number{
+        font-size: 48px;
+        font-weight: 900;
+        position: relative;
+        top: -17px;
+    }
+    .sec-7 .price .new .text-price{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 300;
+        line-height: 1em;
+        padding-right: 5px;
+    }
+
+/*Large Desktop*/
+    @media(min-width: 1600px){
+        .sec-1{
+            min-height: 538px;
+        }
+        .sec-3{
+            min-height: 785px;
+        }
+    }
+/*Mobile & Tablet*/
+    @media(max-width: 1199px){
+        .sec-1 .table{
+            left: 0;
+            bottom: -130px;
+        }
+        .sec-1 .price{
+            bottom: -150px;
+        }
+        .sec-1 .btn-order{
+            top: 230px;
+            right: -222px;
+        }
+    }
+    @media (max-width: 991px){   
+        .sec-2{
+            padding-bottom: 30px;
+        }
+        .sec-2 h2{
+            margin-top: 15px;
+        }
+        .sec-2 .item{
+            margin-top: 15px;
+        }
+        .sec-3 .text{
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            padding: 20px 10px 25px;
+            font-size: 20px;
+        }
+        .sec-4 h2{
+            margin: 50px 0 30px;
+        }
+        .sec-4 .sao{
+            display: none;
+        }
+        .sec-4 .center-text{
+            margin-top: 0;
+        }   
+        .sec-5{
+            padding-top: 20px;
+            min-height: 700px;
+        }
+        .sec-5 .text-head{
+            width: 90%;
+        }
+        .sec-5 .sp{
+            top: 88px;
+            width: 80%;
+        }
+        .sec-5 .btn-order{
+            margin-bottom: 15px;
+        }
+        .sec-5 .price{
+            margin-top: 0;
+        }
+        .sec-5 .price .old{
+            width: 30%;
+            font-size: 26px;
+            float: left;
+            padding-top: 5px;
+        }
+        .sec-5 .price .new{
+            width: 68%;
+            float: left;
+        }
+        .time .flip{
+            zoom: 0.7;
+        }
+        .time .flip-clock-divider{
+            zoom: 0.7;
+        }
+        .time .flip-clock-before,
+        .time .flip-clock-active{
+            padding-bottom: 1px; 
+        }
+        .sec-6{
+            padding-bottom: 50px;
+        }
+        .sec-6 h2{
+            margin: 60px auto 10px;
+        }
+        .sec-6 .ava{
+            position: relative;
+            left: 0;
+            bottom:-30px;
+        }
+        .sec-6 .text{
+            padding: 25px 20px;
+        }
+        .sec-7{
+            padding-bottom: 50px;
+            background: url(../../../d1qgok7w0wzph.cloudfront.net/vongtay-gosua/vongtay-gosua-2/bg7.jpg) left top no-repeat;
+            background-size: cover;
+        }
+        .sec-7 .area{
+            border: 2px solid #fff09d;
+            padding: 10px;
+            background-color: #0000007d;
+        }
+        .sec-7 .area h3{
+            margin-top: 0px;
+            font-size: 24px;
+        }
+        .sec-7 .price .old{
+            text-align: center;
+        }
+        .time .flip{
+            zoom: 0.64;
+        }
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.up div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.up div.shadow,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.down div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.down div.shadow,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.up div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.up div.shadow,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.down div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.down div.shadow {
+            font-size: 0.65em;
+        }
+    }
+    @media(max-width: 990px) and (min-width: 730px){
+        .sec-1{
+            min-height: 600px;
+        }
+        .sec-1 .logo{
+            width: 30%;
+            margin-bottom: 10px;
+        }
+        .sec-1 .slogan{
+            clear: both;
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            z-index: 11;
+        }
+        .sec-1 .slogan h3{
+            font-family: 'utm-fire-house';
+            color: #bd333a;
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 0.8em;
+            margin-top: 5px;
+        }
+        .sec-1 .circle{
+            width: 50%;
+            background-size: contain;
+            margin: 0 5px;
+            right: 5%;
+            top: -85px;
+        }
+        .sec-1 .sp{
+            position: relative;
+            right: 0;
+            left: 100px;
+            width: 60%;
+            margin: 30px auto 0;
+            top: 60px;
+        }
+        .sec-1 .table{
+            background-size: contain;
+            width: 100%;
+            left: 0;
+            margin: 0 5px;
+            top: 420px;
+        }
+        .sec-1 .btn-order{
+            right: 0;
+            margin:0 auto;
+            left: 18%;
+            top: 327px;
+            background-color: #b30a12;
+        }
+        .sec-1 .price{
+            z-index: 11;
+            left: -57%;
+            top: 430px;
+        }
+    }
+    @media(max-width: 729px) and (min-width: 431px){
+        .sec-1{
+            min-height: 600px;
+        }
+        .sec-1 .logo{
+            width: 30%;
+            margin-bottom: 10px;
+        }
+        .sec-1 .slogan{
+            clear: both;
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            z-index: 11;
+        }
+        .sec-1 .slogan h3{
+            font-family: 'utm-fire-house';
+            color: #bd333a;
+            font-size: 75px;
+            font-weight: normal;
+            line-height: 0.8em;
+            margin: 5px auto 0;
+            max-width: 500px;
+        }
+        .sec-1 .circle{
+            width: 50%;
+            background-size: contain;
+            margin: 0 5px;
+            right: 5%;
+            top: -55px;
+        }
+        .sec-1 .sp{
+            position: relative;
+            right: 0;
+            left: 100px;
+            width: 60%;
+            margin: 30px auto 0;
+            top: 60px;
+        }
+        .sec-1 .table{
+            background-size: contain;
+            width: 100%;
+            left: 0;
+            margin: 0 5px;
+            top: 465px;
+        }
+        .sec-1 .btn-order{
+            right: 0;
+            margin:0 auto;
+            left: 10%;
+            top: 220px;
+            background-color: #b30a12;
+        }
+        .sec-1 .price{
+            z-index: 11;
+            left: -48%;
+            top: 340px;
+        }
+    }
+    @media(max-width: 430px){
+        .sec-1{
+            min-height: 600px;
+        }
+        .sec-1 .logo{
+            width: 40%;
+            margin-bottom: 10px;
+        }
+        .sec-1 .slogan{
+            clear: both;
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            z-index: 11;
+        }
+        .sec-1 .slogan h3{
+            font-family: 'utm-fire-house';
+            color: #bd333a;
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 0.8em;
+            margin-top: 5px;
+        }
+        .sec-1 .circle{
+            width: 75%;
+            background-size: contain;
+            margin: 0 5px;
+            right: 5%;
+            top: -85px;
+        }
+        .sec-1 .sp{
+            position: relative;
+            right: 0;
+            left: 0;
+            width: 95%;
+            margin: 30px auto 0;
+            top: 0;
+        }
+        .sec-1 .table{
+            background-size: contain;
+            width: 100%;
+            left: 0;
+            margin: 0 5px;
+            top: 420px;
+        }
+        .sec-1 .btn-order{
+            right: 0;
+            margin:0 auto;
+            left: 25%;
+            top: 385px;
+            background-color: #b30a12;
+        }
+        .sec-1 .price{
+            z-index: 11;
+            right: 20%;
+            top: 490px;
+        }
+    }
+    @media(max-width: 370px){
+        .sec-1{
+            min-height: 600px;
+        }
+        .sec-1 .logo{
+            width: 40%;
+            margin-bottom: 10px;
+        }
+        .sec-1 .slogan{
+            clear: both;
+            position: relative;
+            width: 100%;
+            right: 0;
+            top: 0;
+            z-index: 11;
+        }
+        .sec-1 .slogan h3{
+            font-family: 'utm-fire-house';
+            color: #bd333a;
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 0.8em;
+            margin-top: 5px;
+        }
+        .sec-1 .circle{
+            width: 75%;
+            background-size: contain;
+            margin: 0 5px;
+            right: 5%;
+            top: -85px;
+        }
+        .sec-1 .sp{
+            position: relative;
+            right: 0;
+            left: 0;
+            width: 95%;
+            margin: 30px auto 0;
+            top: 0;
+        }
+        .sec-1 .table{
+            background-size: contain;
+            width: 100%;
+            left: 0;
+            margin: 0 5px;
+            top: 420px;
+        }
+        .sec-1 .btn-order{
+            right: 0;
+            margin:0 auto;
+            left: 25%;
+            top: 342px;
+            background-color: #b30a12;
+        }
+        .sec-1 .price{
+            z-index: 11;
+            right: 20%;
+            top: 490px;
+        }
+        .time .flip{
+            zoom: 0.5;
+        }
+        .sec-7 .price .new .number {
+            font-size: 38px;
+            top:-10px;
+        } 
+        .sec-5 .price .new span{
+            font-size: 34px;
+        }
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.up div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.up div.shadow,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.down div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-before a div.down div.shadow,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.up div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.up div.shadow,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.down div.inn,
+        .time .flip-clock-wrapper ul.flip li.flip-clock-active a div.down div.shadow {
+            font-size: 0.6em;
+        }
+    }
